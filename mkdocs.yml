@@ -1,0 +1,46 @@
+site_name: DevOps for engineers
+repo_url: https://github.com/yjchoi1/learn-devops-ml
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+  features:
+    - content.tabs.link
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Intro to DevOps: 00-devops/devops.md
+  - Code design:
+    - Overview: 01-code-design/code_design.md
+    - Modular code design: 01-code-design/modular_code_design.md
+    - Test driven development: 01-code-design/test_driven_development.md
+  - Git: 
+    - Overview: 02-git/git.md
+    - Commit: 02-git/commit.md
+    - Branch: 02-git/branch.md
+    - Merge: 02-git/merge.md
+    - Rebase: 02-git/rebase.md
+    - Conflict: 02-git/conflict.md
+    - Going back: 02-git/reset_and_revert.md
+    - Squash: 02-git/squash.md
+  - GitHub:
+    - Overview: 03-github/github.md
+    - Fork: 03-github/fork.md
+    - Push: 03-github/push.md
+    - Pull: 03-github/pull.md
+    - Pull request: 03-github/pull_request.md
+    - CI/CD: 03-github/ci_cd.md
+    - Copilot: 03-github/copilot.md
+    - Submodule: 03-github/submodule.md
+  - Container and Docker: 04-container-and-docker/container_and_docker.md
+  - Remote development: 05-remote-development/remote_development.md
