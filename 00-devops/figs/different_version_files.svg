@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="360" viewBox="0 0 980 360" role="img" aria-label="Diagram comparing multiple versioned files with Git commit history">
+  <defs>
+    <style>
+      .title { font: 700 24px Arial, sans-serif; fill: #0f172a; }
+      .label { font: 700 18px Arial, sans-serif; fill: #0f172a; }
+      .text { font: 14px Arial, sans-serif; fill: #334155; }
+      .mono { font: 13px monospace; fill: #0f172a; }
+      .small { font: 12px Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect width="980" height="360" fill="#f8fafc" />
+  <text x="36" y="42" class="title">Tracking versions with copied files vs Git history</text>
+
+  <rect x="36" y="74" width="412" height="246" rx="18" fill="#fff7ed" stroke="#fdba74" stroke-width="2" />
+  <text x="58" y="105" class="label">Without Git: copied files and folders</text>
+  <text x="58" y="128" class="text">Projects become cluttered with manual snapshots.</text>
+
+  <rect x="58" y="152" width="170" height="38" rx="8" fill="#ffffff" stroke="#cbd5e1" />
+  <text x="72" y="176" class="mono">analysis.py</text>
+
+  <rect x="58" y="200" width="214" height="38" rx="8" fill="#ffffff" stroke="#cbd5e1" />
+  <text x="72" y="224" class="mono">analysis_final_v2.py</text>
+
+  <rect x="58" y="248" width="234" height="38" rx="8" fill="#ffffff" stroke="#cbd5e1" />
+  <text x="72" y="272" class="mono">analysis_really_final.py</text>
+
+  <rect x="310" y="176" width="110" height="88" rx="10" fill="#ffedd5" stroke="#fb923c" />
+  <text x="327" y="207" class="mono">backup/</text>
+  <text x="327" y="228" class="small">old/</text>
+  <text x="327" y="247" class="small">final/</text>
+
+  <text x="58" y="304" class="text">Hard to tell which file is the latest and why it changed.</text>
+
+  <rect x="530" y="74" width="414" height="246" rx="18" fill="#ecfdf5" stroke="#86efac" stroke-width="2" />
+  <text x="552" y="105" class="label">With Git: one clean file, full history</text>
+  <text x="552" y="128" class="text">The working directory stays simple and changes are recorded as commits.</text>
+
+  <rect x="552" y="152" width="194" height="38" rx="8" fill="#ffffff" stroke="#cbd5e1" />
+  <text x="566" y="176" class="mono">analysis.py</text>
+
+  <line x1="574" y1="232" x2="882" y2="232" stroke="#94a3b8" stroke-width="4" />
+  <circle cx="622" cy="232" r="10" fill="#38bdf8" />
+  <circle cx="736" cy="232" r="10" fill="#22c55e" />
+  <circle cx="850" cy="232" r="10" fill="#f59e0b" />
+
+  <text x="592" y="263" class="mono">c1a2b3</text>
+  <text x="706" y="263" class="mono">d4e5f6</text>
+  <text x="820" y="263" class="mono">g7h8i9</text>
+
+  <text x="578" y="285" class="small">initial version</text>
+  <text x="697" y="285" class="small">bug fix</text>
+  <text x="808" y="285" class="small">refactor</text>
+
+  <text x="552" y="304" class="text">One file in the project, many versions preserved in commit history.</text>
+
+  <path d="M462 198 C490 198, 500 198, 520 198" fill="none" stroke="#94a3b8" stroke-width="3" />
+  <polygon points="520,198 508,191 508,205" fill="#94a3b8" />
+</svg>

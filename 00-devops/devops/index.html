@@ -9,26 +9,28 @@
       
       
       
+        <link rel="prev" href="../..">
       
-        <link rel="next" href="00-devops/devops/">
+      
+        <link rel="next" href="../../01-code-design/code_design/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>DevOps Basics for Engineers</title>
+        <title>Intro to DevOps - DevOps Basics for Engineers</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#devops-basics-for-engineers" class="md-skip">
+        <a href="#what-is-devops" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="DevOps Basics for Engineers" class="md-header__button md-logo" aria-label="DevOps Basics for Engineers" data-md-component="logo">
+    <a href="../.." title="DevOps Basics for Engineers" class="md-header__button md-logo" aria-label="DevOps Basics for Engineers" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Intro to DevOps
             
           </span>
         </div>
@@ -210,7 +212,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="DevOps Basics for Engineers" class="md-nav__button md-logo" aria-label="DevOps Basics for Engineers" data-md-component="logo">
+    <a href="../.." title="DevOps Basics for Engineers" class="md-nav__button md-logo" aria-label="DevOps Basics for Engineers" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -237,37 +239,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -283,48 +258,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#about-this-guide" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        About This Guide
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisite" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prerequisite
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -333,10 +266,35 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="00-devops/devops/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro to DevOps
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -352,6 +310,118 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-devops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is DevOps?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-we-need-devops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why we need DevOps?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why we need DevOps?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#version-control-keeps-code-history-clean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Version control keeps code history clean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-repository-and-collaboration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote repository and collaboration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote deployment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-and-cicd-catch-problems-early" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing and CI/CD catch problems early
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-agnostic-development-avoids-works-on-my-machine-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Machine-agnostic development avoids "works on my machine" issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-agnostic-deployment-improves-reproducibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Machine-agnostic deployment improves reproducibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -410,7 +480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01-code-design/code_design/" class="md-nav__link">
+      <a href="../../01-code-design/code_design/" class="md-nav__link">
         
   
   
@@ -438,7 +508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01-code-design/modular_code_design/" class="md-nav__link">
+      <a href="../../01-code-design/modular_code_design/" class="md-nav__link">
         
   
   
@@ -466,7 +536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01-code-design/modular_code_example_eng/" class="md-nav__link">
+      <a href="../../01-code-design/modular_code_example_eng/" class="md-nav__link">
         
   
   
@@ -494,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01-code-design/modular_code_example_ml/" class="md-nav__link">
+      <a href="../../01-code-design/modular_code_example_ml/" class="md-nav__link">
         
   
   
@@ -522,7 +592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01-code-design/test_driven_development/" class="md-nav__link">
+      <a href="../../01-code-design/test_driven_development/" class="md-nav__link">
         
   
   
@@ -604,7 +674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-git/git/" class="md-nav__link">
+      <a href="../../02-git/git/" class="md-nav__link">
         
   
   
@@ -632,7 +702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-git/commit/" class="md-nav__link">
+      <a href="../../02-git/commit/" class="md-nav__link">
         
   
   
@@ -660,7 +730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-git/branch/" class="md-nav__link">
+      <a href="../../02-git/branch/" class="md-nav__link">
         
   
   
@@ -688,7 +758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-git/merge/" class="md-nav__link">
+      <a href="../../02-git/merge/" class="md-nav__link">
         
   
   
@@ -716,7 +786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-git/rebase/" class="md-nav__link">
+      <a href="../../02-git/rebase/" class="md-nav__link">
         
   
   
@@ -744,7 +814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-git/conflict/" class="md-nav__link">
+      <a href="../../02-git/conflict/" class="md-nav__link">
         
   
   
@@ -772,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-git/going_back/" class="md-nav__link">
+      <a href="../../02-git/going_back/" class="md-nav__link">
         
   
   
@@ -800,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-git/squash.md" class="md-nav__link">
+      <a href="../../02-git/squash.md" class="md-nav__link">
         
   
   
@@ -882,7 +952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-github/overview/" class="md-nav__link">
+      <a href="../../03-github/overview/" class="md-nav__link">
         
   
   
@@ -910,7 +980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-github/first_repository/" class="md-nav__link">
+      <a href="../../03-github/first_repository/" class="md-nav__link">
         
   
   
@@ -938,7 +1008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-github/fork_and_clone/" class="md-nav__link">
+      <a href="../../03-github/fork_and_clone/" class="md-nav__link">
         
   
   
@@ -966,7 +1036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-github/fetch_and_pull/" class="md-nav__link">
+      <a href="../../03-github/fetch_and_pull/" class="md-nav__link">
         
   
   
@@ -994,7 +1064,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-github/pull_request/" class="md-nav__link">
+      <a href="../../03-github/pull_request/" class="md-nav__link">
         
   
   
@@ -1022,7 +1092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-github/ci_cd/" class="md-nav__link">
+      <a href="../../03-github/ci_cd/" class="md-nav__link">
         
   
   
@@ -1050,7 +1120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-github/copilot/" class="md-nav__link">
+      <a href="../../03-github/copilot/" class="md-nav__link">
         
   
   
@@ -1078,7 +1148,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-github/submodule/" class="md-nav__link">
+      <a href="../../03-github/submodule/" class="md-nav__link">
         
   
   
@@ -1106,7 +1176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-github/best_practices/" class="md-nav__link">
+      <a href="../../03-github/best_practices/" class="md-nav__link">
         
   
   
@@ -1141,7 +1211,7 @@
   
   
     <li class="md-nav__item">
-      <a href="04-container-and-docker/container_and_docker/" class="md-nav__link">
+      <a href="../../04-container-and-docker/container_and_docker/" class="md-nav__link">
         
   
   
@@ -1168,7 +1238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="05-remote-development/remote_development.md" class="md-nav__link">
+      <a href="../../05-remote-development/remote_development.md" class="md-nav__link">
         
   
   
@@ -1205,8 +1275,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1215,10 +1283,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#about-this-guide" class="md-nav__link">
+  <a href="#what-is-devops" class="md-nav__link">
     <span class="md-ellipsis">
       
-        About This Guide
+        What is DevOps?
       
     </span>
   </a>
@@ -1226,13 +1294,85 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#prerequisite" class="md-nav__link">
+  <a href="#why-we-need-devops" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Prerequisite
+        Why we need DevOps?
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Why we need DevOps?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#version-control-keeps-code-history-clean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Version control keeps code history clean
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-repository-and-collaboration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote repository and collaboration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote deployment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-and-cicd-catch-problems-early" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing and CI/CD catch problems early
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-agnostic-development-avoids-works-on-my-machine-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Machine-agnostic development avoids "works on my machine" issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-agnostic-deployment-improves-reproducibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Machine-agnostic deployment improves reproducibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1256,49 +1396,74 @@
   
 
 
-<h1 id="devops-basics-for-engineers">DevOps basics for Engineers</h1>
-<blockquote>
-<p><a href="https://sites.google.com/view/geo-yjchoi/home">Yongjin Choi, KAIST</a></p>
-</blockquote>
-<h2 id="about-this-guide">About This Guide</h2>
-<p>As an engineering researcher, I realized the importance and the challenges of systematic <strong>version control</strong> when developing research software, <strong>collaborating</strong> with other researchers, and handling <strong>environment dependency</strong> issues during software deployment. </p>
-<p>Fortunately, there are tools and workflows that make <strong>these tasks much easier</strong>. I made this learning module to help engineers and researchers new to these topics get started easily and practically, with the key tools and workflows necessary for effective research code and software development.</p>
-<h2 id="prerequisite">Prerequisite</h2>
+  <h1>Intro to DevOps</h1>
+
+<h2 id="what-is-devops">What is DevOps?</h2>
+<p>DevOps is a methodological framework that integrates software development and IT operations. By leveraging automation, collaborative cultures, and consistent environments, DevOps enables teams to build, test, and deploy high-quality software with increased velocity and reliability.</p>
+<p>Typical DevOps tools include:</p>
+<ul>
+<li>Version control systems (e.g., Git)</li>
+<li>Collaboratino, continuous integration/continuous deployment (CI/CD) platforms (e.g., GitHub, GitLab)</li>
+<li>Containerization tools (e.g., Docker)</li>
+<li>Container orchestration platforms (e.g., Kubernetes)</li>
+</ul>
+<h2 id="why-we-need-devops">Why we need DevOps?</h2>
+<h3 id="version-control-keeps-code-history-clean">Version control keeps code history clean</h3>
+<p>Instead of copying files like <code>analysis_final_v2.py</code> or commenting out old code, we can track changes properly with Git and return to earlier versions when needed. For example:</p>
 <ul>
 <li>
-<p>Install Git, VS Code, and GitLens extension.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">WSL</label><label for="__tabbed_1_3">Linux</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<ul>
-<li><a href="https://git-scm.com/download/win">Install Git for Windows</a></li>
-<li>Install <a href="https://code.visualstudio.com/docs/setup/windows">VS Code</a> and <a href="https://www.gitkraken.com/gitlens">GitLens</a> add-on.</li>
-<li>Install <a href="https://aka.ms/terminal">Windows Terminal</a> for a better shell experience.</li>
-</ul>
-</div>
-<div class="tabbed-block">
-<ul>
-<li><a href="https://learn.microsoft.com/en-us/windows/wsl/install">Install WSL</a></li>
-<li><a href="https://info-ee.surrey.ac.uk/Teaching/Unix/">Linux basics</a></li>
-<li><a href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git#installing-git">Install Git to WSL Ubuntu</a></li>
-<li>Install <a href="https://code.visualstudio.com/docs/setup/linux#_install-vs-code-on-linux">VS Code in WSL Ubuntu</a> and <a href="https://www.gitkraken.com/gitlens">GitLens</a> add-on.</li>
-</ul>
-</div>
-<div class="tabbed-block">
-<ul>
-<li><a href="https://info-ee.surrey.ac.uk/Teaching/Unix/">Linux basics</a></li>
-<li><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Install Git</a></li>
-<li>Install <a href="https://code.visualstudio.com/docs/setup/linux">VS Code</a> and <a href="https://www.gitkraken.com/gitlens">GitLens</a> add-on.</li>
-</ul>
-</div>
-</div>
-</div>
+<p>Messy commented out old code lines:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_squares</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="c1"># old version</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="c1"># result = []</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="c1"># for n in numbers:</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="c1">#     result.append(n ** 2)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="c1"># return result</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="c1"># new version</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="k">return</span> <span class="p">[</span><span class="n">n</span> <span class="o">**</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">]</span>
+</span></code></pre></div></p>
 </li>
 <li>
-<p>Create <a href="https://github.com/">Github</a> account</p>
+<p>With Git, we keep only the latest version, but still preserve the previous one through commit history:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_squares</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="k">return</span> <span class="p">[</span><span class="n">n</span> <span class="o">**</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">]</span>
+</span></code></pre></div>
+<img alt="Commit history" src="../figs/commit_history_get_squares.svg" /></p>
 </li>
-<li>(Optional) Install <a href="https://hub.docker.com/">Docker</a> and create <a href="https://hub.docker.com/">Dockerhub</a> account</li>
+<li>
+<p>Likewise, no need to create multiple files or folders to track code versions. Commit history tracks this.
+<img alt="Different version history" src="../figs/different_version_files.svg" /></p>
+</li>
 </ul>
+<h3 id="remote-repository-and-collaboration">Remote repository and collaboration</h3>
+<ul>
+<li>
+<p>An example for remote repository 
+<img alt="Github" src="../figs/github_example.png" /></p>
+</li>
+<li>
+<p>Collaboration with github pull request (PR)
+Example of PR: <a href="https://github.com/geoelements/gns/pull/67">https://github.com/geoelements/gns/pull/67</a>
+<img alt="Example of PR" src="../figs/pr_example.png" /></p>
+</li>
+</ul>
+<h3 id="remote-deployment">Remote deployment</h3>
+<ul>
+<li>
+<p>Deploy your website to GitHub Pages using GitHub Action. <a href="https://cbgeopy.readthedocs.io/en/latest/index.html">Example</a></p>
+</li>
+<li>
+<p>Deploy your ML application to Hugging Face Spaces. 
+<img alt="hf space" src="../figs/hugging_face_example.png" /></p>
+</li>
+</ul>
+<h3 id="testing-and-cicd-catch-problems-early">Testing and CI/CD catch problems early</h3>
+<p>Automated checks help us verify that code still works before it is merged or deployed, which is much safer than testing everything manually at the end.</p>
+<h3 id="machine-agnostic-development-avoids-works-on-my-machine-issues">Machine-agnostic development avoids "works on my machine" issues</h3>
+<p>With consistent environments such as containers, the same code can run more predictably across laptops, servers, and cloud machines.</p>
+<h3 id="machine-agnostic-deployment-improves-reproducibility">Machine-agnostic deployment improves reproducibility</h3>
+<p>If development and deployment environments are consistent, it becomes much easier to move a project from local testing to remote execution without unexpected failures.</p>
 
 
 
@@ -1350,10 +1515,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.tabs.link", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.tabs.link", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

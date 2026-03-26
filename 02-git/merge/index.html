@@ -9,26 +9,28 @@
       
       
       
+        <link rel="prev" href="../branch/">
       
-        <link rel="next" href="00-devops/devops/">
+      
+        <link rel="next" href="../rebase/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>DevOps Basics for Engineers</title>
+        <title>Merge - DevOps Basics for Engineers</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#devops-basics-for-engineers" class="md-skip">
+        <a href="#merge-a-branch" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="DevOps Basics for Engineers" class="md-header__button md-logo" aria-label="DevOps Basics for Engineers" data-md-component="logo">
+    <a href="../.." title="DevOps Basics for Engineers" class="md-header__button md-logo" aria-label="DevOps Basics for Engineers" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Merge
             
           </span>
         </div>
@@ -210,7 +212,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="DevOps Basics for Engineers" class="md-nav__button md-logo" aria-label="DevOps Basics for Engineers" data-md-component="logo">
+    <a href="../.." title="DevOps Basics for Engineers" class="md-nav__button md-logo" aria-label="DevOps Basics for Engineers" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -237,37 +239,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -283,48 +258,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#about-this-guide" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        About This Guide
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisite" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prerequisite
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -336,7 +269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="00-devops/devops/" class="md-nav__link">
+      <a href="../../00-devops/devops/" class="md-nav__link">
         
   
   
@@ -410,7 +343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01-code-design/code_design/" class="md-nav__link">
+      <a href="../../01-code-design/code_design/" class="md-nav__link">
         
   
   
@@ -438,7 +371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01-code-design/modular_code_design/" class="md-nav__link">
+      <a href="../../01-code-design/modular_code_design/" class="md-nav__link">
         
   
   
@@ -466,7 +399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01-code-design/modular_code_example_eng/" class="md-nav__link">
+      <a href="../../01-code-design/modular_code_example_eng/" class="md-nav__link">
         
   
   
@@ -494,7 +427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01-code-design/modular_code_example_ml/" class="md-nav__link">
+      <a href="../../01-code-design/modular_code_example_ml/" class="md-nav__link">
         
   
   
@@ -522,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01-code-design/test_driven_development/" class="md-nav__link">
+      <a href="../../01-code-design/test_driven_development/" class="md-nav__link">
         
   
   
@@ -554,18 +487,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -586,7 +521,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -604,7 +539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-git/git/" class="md-nav__link">
+      <a href="../git/" class="md-nav__link">
         
   
   
@@ -632,7 +567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-git/commit/" class="md-nav__link">
+      <a href="../commit/" class="md-nav__link">
         
   
   
@@ -660,7 +595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-git/branch/" class="md-nav__link">
+      <a href="../branch/" class="md-nav__link">
         
   
   
@@ -685,10 +620,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="02-git/merge/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Merge
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -704,6 +664,85 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#merge-a-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merge a branch
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of merge
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of merge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regular-3-way-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regular (3-way) merge
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fast-forward-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fast-forward merge
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -716,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-git/rebase/" class="md-nav__link">
+      <a href="../rebase/" class="md-nav__link">
         
   
   
@@ -744,7 +783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-git/conflict/" class="md-nav__link">
+      <a href="../conflict/" class="md-nav__link">
         
   
   
@@ -772,7 +811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-git/going_back/" class="md-nav__link">
+      <a href="../going_back/" class="md-nav__link">
         
   
   
@@ -800,7 +839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-git/squash.md" class="md-nav__link">
+      <a href="../squash.md" class="md-nav__link">
         
   
   
@@ -882,7 +921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-github/overview/" class="md-nav__link">
+      <a href="../../03-github/overview/" class="md-nav__link">
         
   
   
@@ -910,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-github/first_repository/" class="md-nav__link">
+      <a href="../../03-github/first_repository/" class="md-nav__link">
         
   
   
@@ -938,7 +977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-github/fork_and_clone/" class="md-nav__link">
+      <a href="../../03-github/fork_and_clone/" class="md-nav__link">
         
   
   
@@ -966,7 +1005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-github/fetch_and_pull/" class="md-nav__link">
+      <a href="../../03-github/fetch_and_pull/" class="md-nav__link">
         
   
   
@@ -994,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-github/pull_request/" class="md-nav__link">
+      <a href="../../03-github/pull_request/" class="md-nav__link">
         
   
   
@@ -1022,7 +1061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-github/ci_cd/" class="md-nav__link">
+      <a href="../../03-github/ci_cd/" class="md-nav__link">
         
   
   
@@ -1050,7 +1089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-github/copilot/" class="md-nav__link">
+      <a href="../../03-github/copilot/" class="md-nav__link">
         
   
   
@@ -1078,7 +1117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-github/submodule/" class="md-nav__link">
+      <a href="../../03-github/submodule/" class="md-nav__link">
         
   
   
@@ -1106,7 +1145,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-github/best_practices/" class="md-nav__link">
+      <a href="../../03-github/best_practices/" class="md-nav__link">
         
   
   
@@ -1141,7 +1180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="04-container-and-docker/container_and_docker/" class="md-nav__link">
+      <a href="../../04-container-and-docker/container_and_docker/" class="md-nav__link">
         
   
   
@@ -1168,7 +1207,7 @@
   
   
     <li class="md-nav__item">
-      <a href="05-remote-development/remote_development.md" class="md-nav__link">
+      <a href="../../05-remote-development/remote_development.md" class="md-nav__link">
         
   
   
@@ -1205,8 +1244,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1215,10 +1252,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#about-this-guide" class="md-nav__link">
+  <a href="#merge-a-branch" class="md-nav__link">
     <span class="md-ellipsis">
       
-        About This Guide
+        Merge a branch
       
     </span>
   </a>
@@ -1226,13 +1263,52 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#prerequisite" class="md-nav__link">
+  <a href="#types-of-merge" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Prerequisite
+        Types of merge
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Types of merge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regular-3-way-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regular (3-way) merge
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fast-forward-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fast-forward merge
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1256,49 +1332,124 @@
   
 
 
-<h1 id="devops-basics-for-engineers">DevOps basics for Engineers</h1>
-<blockquote>
-<p><a href="https://sites.google.com/view/geo-yjchoi/home">Yongjin Choi, KAIST</a></p>
-</blockquote>
-<h2 id="about-this-guide">About This Guide</h2>
-<p>As an engineering researcher, I realized the importance and the challenges of systematic <strong>version control</strong> when developing research software, <strong>collaborating</strong> with other researchers, and handling <strong>environment dependency</strong> issues during software deployment. </p>
-<p>Fortunately, there are tools and workflows that make <strong>these tasks much easier</strong>. I made this learning module to help engineers and researchers new to these topics get started easily and practically, with the key tools and workflows necessary for effective research code and software development.</p>
-<h2 id="prerequisite">Prerequisite</h2>
-<ul>
-<li>
-<p>Install Git, VS Code, and GitLens extension.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">WSL</label><label for="__tabbed_1_3">Linux</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<ul>
-<li><a href="https://git-scm.com/download/win">Install Git for Windows</a></li>
-<li>Install <a href="https://code.visualstudio.com/docs/setup/windows">VS Code</a> and <a href="https://www.gitkraken.com/gitlens">GitLens</a> add-on.</li>
-<li>Install <a href="https://aka.ms/terminal">Windows Terminal</a> for a better shell experience.</li>
-</ul>
+  <h1>Merge</h1>
+
+<h2 id="merge-a-branch">Merge a branch</h2>
+<p>If we finish developing in our branch (e.g., <code>dev/data_loader</code>), we can merge it into our <code>main</code> branch.</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>main<span class="w">  </span><span class="c1"># Move to master branch</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main<span class="w">  </span><span class="c1"># If you are coworking through github, pull any new remote changes</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>git<span class="w"> </span>branch<span class="w"> </span>--merged<span class="w">  </span><span class="c1"># List out the branches we have merged to date</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>git<span class="w"> </span>merge<span class="w"> </span>dev/data_loader<span class="w">  </span><span class="c1"># Merge in our branch</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main<span class="w">  </span><span class="c1"># Push our changes to master</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>git<span class="w"> </span>branch<span class="w"> </span>--merged<span class="w">  </span><span class="c1"># Note new newly merged branch has been added</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>git<span class="w"> </span>log<span class="w"> </span>--graph<span class="w"> </span>--oneline<span class="w">  </span><span class="c1"># see commit history as graph</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If both <code>main</code> and your merging branch (e.g., <code>dev/data_loader</code>) have changes to the same lines of code, Git will encounter a merge conflict and display an error message. You will need to resolve these conflicts before completing the merge. You can do it manually, or with VS Code supporting GUI. See <a href="../conflict/">this page</a> </p>
 </div>
-<div class="tabbed-block">
-<ul>
-<li><a href="https://learn.microsoft.com/en-us/windows/wsl/install">Install WSL</a></li>
-<li><a href="https://info-ee.surrey.ac.uk/Teaching/Unix/">Linux basics</a></li>
-<li><a href="https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git#installing-git">Install Git to WSL Ubuntu</a></li>
-<li>Install <a href="https://code.visualstudio.com/docs/setup/linux#_install-vs-code-on-linux">VS Code in WSL Ubuntu</a> and <a href="https://www.gitkraken.com/gitlens">GitLens</a> add-on.</li>
-</ul>
+<p><img alt="Gitlense view of merge commit" src="../figs/merge/merge_dataloader.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>After merging, you may remove the branch if you don't want to keep it.
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>branch<span class="w"> </span>-d<span class="w"> </span>dev/data_loader<span class="w">  </span><span class="c1"># Remove the local branch that was just merged</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>--delete<span class="w"> </span>dev/data_loader<span class="w">  </span><span class="c1"># Remove the branch from the remote as well</span>
+</span></code></pre></div></p>
 </div>
-<div class="tabbed-block">
-<ul>
-<li><a href="https://info-ee.surrey.ac.uk/Teaching/Unix/">Linux basics</a></li>
-<li><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Install Git</a></li>
-<li>Install <a href="https://code.visualstudio.com/docs/setup/linux">VS Code</a> and <a href="https://www.gitkraken.com/gitlens">GitLens</a> add-on.</li>
-</ul>
+<p>Check status and keep developing</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git<span class="w"> </span>status<span class="w">  </span><span class="c1"># check status</span>
+</span></code></pre></div>
+<p>Make updates and <code>stage</code>, <code>commit</code>.</p>
+<h2 id="types-of-merge">Types of merge</h2>
+<p>When you run <code>git merge</code>, Git decides which strategy to use based on the shape of the commit history. The two most common outcomes are a <strong>fast-forward merge</strong> and a <strong>regular (3-way) merge</strong>.</p>
+<h3 id="regular-3-way-merge">Regular (3-way) merge</h3>
+<p>A regular merge is needed when <strong>both branches have new commits</strong> since they diverged. Git finds the common ancestor, compares the two branch tips against it, and combines the changes into a new <strong>merge commit</strong> with two parents.</p>
+<p>Before merge, <code>main</code> and <code>feature</code> have diverged:</p>
+<pre class="mermaid"><code>%%{init: {'theme': 'base', 'themeVariables': {'git0': '#4A90D9', 'git1': '#E07B53', 'gitBranchLabel0': '#ffffff', 'gitBranchLabel1': '#ffffff', 'commitLabelColor': '#333333', 'commitLabelBackground': '#ffffff'}} }%%
+gitGraph
+    commit id: "A"
+    commit id: "B"
+    branch feature
+    commit id: "C"
+    commit id: "D"
+    checkout main
+    commit id: "E"</code></pre>
+<p>After <code>git merge feature</code> on <code>main</code>, a merge commit <code>M</code> joins the two histories:</p>
+<pre class="mermaid"><code>%%{init: {'theme': 'base', 'themeVariables': {'git0': '#4A90D9', 'git1': '#E07B53', 'gitBranchLabel0': '#ffffff', 'gitBranchLabel1': '#ffffff', 'commitLabelColor': '#333333', 'commitLabelBackground': '#ffffff'}} }%%
+gitGraph
+    commit id: "A"
+    commit id: "B"
+    branch feature
+    commit id: "C"
+    commit id: "D"
+    checkout main
+    commit id: "E"
+    merge feature id: "M"</code></pre>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>main
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>git<span class="w"> </span>merge<span class="w"> </span>feature<span class="w">   </span><span class="c1"># creates a merge commit M</span>
+</span></code></pre></div>
+<p>The merge commit <code>M</code> records both parent branches, so you can always trace back to see where the feature was developed.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you prefer to always create a merge commit (even when a fast-forward is possible), use <code>git merge --no-ff feature</code>. This preserves the branch topology in the history, making it easier to see that a group of commits belonged to a feature branch.</p>
 </div>
+<h3 id="fast-forward-merge">Fast-forward merge</h3>
+<p>A fast-forward merge happens when the target branch (e.g., <code>main</code>) has received <strong>no new commits</strong> since you branched off. In other words, your feature branch is directly ahead of <code>main</code>.</p>
+<pre class="mermaid"><code>%%{init: {'theme': 'base', 'themeVariables': {'git0': '#4A90D9', 'git1': '#E07B53', 'gitBranchLabel0': '#ffffff', 'gitBranchLabel1': '#ffffff', 'commitLabelColor': '#333333', 'commitLabelBackground': '#ffffff'}} }%%
+gitGraph
+    commit id: "A"
+    commit id: "B"
+    branch feature
+    commit id: "C"
+    commit id: "D"</code></pre>
+<p>Because there is no divergence, Git simply moves the <code>main</code> pointer forward to the latest commit on <code>feature</code>, so no extra merge commit is created.</p>
+<pre class="mermaid"><code>%%{init: {'theme': 'base', 'themeVariables': {'git0': '#4A90D9', 'gitBranchLabel0': '#ffffff', 'commitLabelColor': '#333333', 'commitLabelBackground': '#ffffff'}} }%%
+gitGraph
+    commit id: "A"
+    commit id: "B"
+    commit id: "C"
+    commit id: "D"</code></pre>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>main
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>git<span class="w"> </span>merge<span class="w"> </span>feature<span class="w">          </span><span class="c1"># fast-forward (default when possible)</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># Or, to be explicit:</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>git<span class="w"> </span>merge<span class="w"> </span>--ff-only<span class="w"> </span>feature<span class="w">  </span><span class="c1"># fails if fast-forward is not possible</span>
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Use <code>--ff-only</code> when you <em>want</em> to guarantee a linear history. If the branches have diverged, the command will fail instead of silently creating a merge commit.</p>
 </div>
-</div>
-</li>
-<li>
-<p>Create <a href="https://github.com/">Github</a> account</p>
-</li>
-<li>(Optional) Install <a href="https://hub.docker.com/">Docker</a> and create <a href="https://hub.docker.com/">Dockerhub</a> account</li>
-</ul>
+<h3 id="quick-comparison">Quick comparison</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Fast-forward</th>
+<th>Regular (3-way)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>When</strong></td>
+<td>Target branch has no new commits</td>
+<td>Both branches have new commits</td>
+</tr>
+<tr>
+<td><strong>Merge commit</strong></td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>History shape</strong></td>
+<td>Linear</td>
+<td>Shows branch and merge</td>
+</tr>
+<tr>
+<td><strong>Command</strong></td>
+<td><code>git merge</code> or <code>git merge --ff-only</code></td>
+<td><code>git merge</code> or <code>git merge --no-ff</code></td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -1350,10 +1501,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.tabs.link", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.tabs.link", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
