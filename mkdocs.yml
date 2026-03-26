@@ -1,5 +1,13 @@
-site_name: DevOps for engineers
-repo_url: https://github.com/yjchoi1/learn-devops-ml
+site_name: DevOps Basics for Engineers
+repo_url: https://github.com/yjchoi1/devops-basics-engineers
+
+extra:
+  math:
+    mathjax: true
+  mermaid:
+    theme:
+      light: neutral
+      dark: dark
 theme:
   name: material
   palette:
@@ -10,11 +18,23 @@ theme:
     - content.code.copy
 
 markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
+  # Tabbed must be listed before SuperFences (PyMdown). alternate_style = Material tab UI.
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences
 
 nav:
@@ -23,24 +43,31 @@ nav:
   - Code design:
     - Overview: 01-code-design/code_design.md
     - Modular code design: 01-code-design/modular_code_design.md
+    - "Example: Engineering": 01-code-design/modular_code_example_eng.md
+    - "Example: ML": 01-code-design/modular_code_example_ml.md
     - Test driven development: 01-code-design/test_driven_development.md
   - Git: 
-    - Overview: 02-git/git.md
+    - Getting started: 02-git/git.md
     - Commit: 02-git/commit.md
     - Branch: 02-git/branch.md
     - Merge: 02-git/merge.md
     - Rebase: 02-git/rebase.md
     - Conflict: 02-git/conflict.md
-    - Going back: 02-git/reset_and_revert.md
+    - Going back: 02-git/going_back.md
     - Squash: 02-git/squash.md
   - GitHub:
-    - Overview: 03-github/github.md
-    - Fork: 03-github/fork.md
-    - Push: 03-github/push.md
-    - Pull: 03-github/pull.md
+    - Overview: 03-github/overview.md
+    - First repository and push: 03-github/first_repository.md  # repo, push
+    # Collaboration
+    - Fork and clone: 03-github/fork_and_clone.md
+    - Fetch and pull: 03-github/fetch_and_pull.md
     - Pull request: 03-github/pull_request.md
+    # Automation
     - CI/CD: 03-github/ci_cd.md
     - Copilot: 03-github/copilot.md
+    # Advanced
     - Submodule: 03-github/submodule.md
+    # Others
+    - Best practices: 03-github/best_practices.md
   - Container and Docker: 04-container-and-docker/container_and_docker.md
   - Remote development: 05-remote-development/remote_development.md
