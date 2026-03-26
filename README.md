@@ -1,12 +1,14 @@
 # DevOps Basics for Engineers
 
-**Author:** [Yongjin Choi, KAIST](https://sites.google.com/view/geo-yjchoi/home)
+> [Yongjin Choi, KAIST](https://sites.google.com/view/geo-yjchoi/home)
 
-[License: CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/yjchoi1/git-github-tutorial/blob/main/LICENSE) [![Online book](https://img.shields.io/badge/Online-Book-informational)](https://yjchoi1.github.io/devops-basics-engineers/)
 
-This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+## About This Guide
 
-Get started: [https://yjchoi1.github.io/devops-basics-engineers/](https://yjchoi1.github.io/devops-basics-engineers/)
+This is a learning module for basics of devops for engineers.
+
+Get started [here](https://yjchoi1.github.io/devops-basics-engineers/).
 
 # Reference
 
