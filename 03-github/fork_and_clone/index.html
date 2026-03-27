@@ -1257,43 +1257,47 @@
   <h1>Fork and clone</h1>
 
 <h2 id="fork">Fork</h2>
+<div class="admonition note">
+<p class="admonition-title">For this exercise</p>
+<p>Since GitHub doesn't allow forking a repository to the same account, <strong>create a new organization</strong> to act as a different contributor. This setup lets you practice the standard cross-account collaboration workflow.</p>
+</div>
 <p>Click the <code>Fork</code> button on the GitHub project page.</p>
 <p><img alt="Fork" src="../figs/fork_and_clone/fork.png" /></p>
 <p>This creates a copy of the project under your GitHub account.</p>
 <p><img alt="Forked account" src="../figs/fork_and_clone/fork2.png" /></p>
-<p>Your fork is independent from the original (<code>upstream</code>), but stays aware of its changes.</p>
+<p>Your fork is independent from the <code>original</code> (<code>upstream</code>), but stays aware of its changes.</p>
 <p><img alt="Forked repo" src="../figs/fork_and_clone/forked_repo.png" /></p>
-<h2 id="clone">Clone</h2>
-<p>Copy the repository URL from your fork.</p>
-<p><img alt="Copy URL" src="../figs/fork_and_clone/clone.png" /></p>
-<p>Then clone it to your local machine.</p>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>&lt;your-project-parent-directory&gt;
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git<span class="w"> </span>clone<span class="w"> </span>&lt;fork-url&gt;
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># git clone https://github.com/yjchoi1-personal/project-dev-demo-fork.git</span>
-</span></code></pre></div>
-<p>Your local copy is now linked to your forked remote.</p>
-<p><img alt="Project in VS Code" src="../figs/fork_and_clone/forked_project_vscode.png" /></p>
-<p>See which remote is linked to your local project.</p>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>remote<span class="w"> </span>-v
-</span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Conventions: <code>origin</code> and <code>upstream</code></p>
 <p><strong><code>origin</code> (Your Fork)</strong></p>
 <ul>
 <li><code>origin</code> refers to <strong>your personal fork</strong> on GitHub.</li>
 <li>Example:
-    <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>origin → https://github.com/yjchoi1-personal/project-dev-demo-fork.git
+    <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>origin → https://github.com/yjchoi1-personal/project-dev-demo-fork.git
 </span></code></pre></div></li>
 </ul>
 <p><strong><code>upstream</code> (The Original Repository)</strong></p>
 <ul>
 <li><code>upstream</code> is a <strong>conventional</strong> name (not built into Git) for the <strong>original repository</strong> you forked from.</li>
 <li>You usually add <code>upstream</code> manually in your local Git repository:
-    <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>upstream<span class="w"> </span>https://github.com/ORIGINAL_OWNER/project-dev-demo.git
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>upstream<span class="w"> </span>https://github.com/ORIGINAL_OWNER/project-dev-demo.git
 </span></code></pre></div></li>
 <li>This helps you keep track of updates from the source project.</li>
 </ul>
 </div>
+<h2 id="clone">Clone</h2>
+<p>Copy the repository URL from your fork.</p>
+<p><img alt="Copy URL" src="../figs/fork_and_clone/clone.png" /></p>
+<p>Then clone it to your local machine.</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">cd</span><span class="w"> </span>&lt;your-project-parent-directory&gt;
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>git<span class="w"> </span>clone<span class="w"> </span>&lt;fork-url&gt;
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># git clone https://github.com/yjchoi1-personal/project-dev-demo-fork.git</span>
+</span></code></pre></div>
+<p>Your local copy is now linked to your forked remote.</p>
+<p><img alt="Project in VS Code" src="../figs/fork_and_clone/forked_project_vscode.png" /></p>
+<p>See which remote is linked to your local project.</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>remote<span class="w"> </span>-v
+</span></code></pre></div>
 
 
 
