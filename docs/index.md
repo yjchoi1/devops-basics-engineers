@@ -5,7 +5,7 @@
 ## About This Guide
 As an engineering researcher, I realized the importance and the challenges of systematic **version control** when developing research software, **collaborating** with other researchers, and handling **environment dependency** issues during software deployment. 
 
-Fortunately, there are tools and workflows that make **these tasks much easier**. I made this learning module to help engineers and researchers new to these topics get started easily and practically, with the key tools and workflows necessary for effective research code and software development.
+Fortunately, there are tools and workflows that make **these tasks much easier**. I made this learning module in the hope that it can help engineers and researchers who are new to these topics get started more easily and practically. It focuses on essential tools and workflows that support effective research code and software development.
 
 ## Prerequisite
 

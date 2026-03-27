@@ -15,7 +15,7 @@ Suppose you have a test suite for your project. Whenever a collaborator makes ch
 **1. Local Testing**  
 You write and run tests locally using tools like `pytest`.
 ```shell
-pytest test
+pytest -v test
 ```
 ![Pytest](figs/ci_cd/pytest.png)
 
