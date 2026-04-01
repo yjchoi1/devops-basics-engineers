@@ -7,9 +7,7 @@ As an engineering researcher, I realized the importance and the challenges of sy
 
 Fortunately, there are tools and workflows that make **these tasks much easier**. I made this learning module in the hope that it can help engineers and researchers who are new to these topics get started more easily and practically. It focuses on essential tools and workflows that support effective research code and software development.
 
-<p align="center">
-  <img src="figs/Picture1.png" alt="DevOps" width="350"/>
-</p>
+![DevOps](figs/Picture1.png)
 
 ## Prerequisite
 
